@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/textP1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="20"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:background="#0000ff"/>
+
+    <Button
+        android:id="@+id/btnSomaP1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="+"
+        android:gravity="center"
+        android:layout_toEndOf="@id/textP1"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btnSubtraiP1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="-"
+        android:gravity="center"
+        android:layout_toStartOf="@id/textP1"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btnMenu"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:text="+"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"/>
+
+    <LinearLayout
+        android:id="@+id/options"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+        <Button
+            android:text="MENU"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            />
+        <Button
+            android:text="mana"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+        <Button
+            android:text="opcoes"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:text="reset"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:gravity="center"
+            android:layout_weight="1"
+            />
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/textP2"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:text="20"
+        android:textColor="#ffffff"
+        android:textSize="50dp"
+        android:background="#ff0000"/>
+
+    <Button
+        android:id="@+id/btnSomaP2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="+"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/textP2"
+        android:textSize="50dp" />
+
+    <Button
+        android:id="@+id/btnSubtraiP2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:text="-"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_toStartOf="@id/textP2"
+        android:textSize="50dp" />
+
+
+</RelativeLayout>
